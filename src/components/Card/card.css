@@ -1,0 +1,53 @@
+.card {
+    display: flex;
+    flex-wrap: wrap;
+
+    border: 1px solid var(--bg-dark);
+    border-radius:4px;
+
+    margin-top: 4rem;
+
+    min-width: 30rem;
+    max-width: 60rem;
+}
+
+.card_block {
+    flex: 1 0 100%;
+    padding: 1rem;
+}
+
+.card_block--header {
+    background-color: var(--bg-dark);
+    font-weight: 500;
+
+    color: var(--bg-primary-light);
+}
+
+.card_block--content {
+    display: flex;
+    flex-wrap: wrap;
+
+    flex: 1 0 100%;
+}
+
+.card_content {
+    display: flex;
+    flex: 1 0 100%;
+}
+
+.card_content:nth-child(odd){
+    background-color: var(--bg-secondary-light);
+}
+
+.content_cell {
+    display: flex;
+    padding: 0.5rem;
+}
+
+.content_cell--title {
+    flex: 1 0 50%;
+}
+
+.content_cell--description {
+    flex: 1 0 50%;
+}
